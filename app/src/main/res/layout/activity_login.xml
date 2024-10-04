@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginPage">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background"
+        android:contentDescription="@string/todo" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="291dp"
+        android:layout_height="352dp"
+        android:background="@drawable/corner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView5">
+
+
+        <TextView
+            android:id="@+id/messageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:fontFamily="@font/hind_semibold"
+            android:layout_marginTop="33dp"
+            android:text="LOGIN"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+        <EditText
+            android:layout_width="216dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="98dp"
+            android:background="@drawable/for_input"
+            android:hint="  Email: "
+            android:textColorHint="@color/white"
+            android:textSize="13dp" />
+
+        <EditText
+
+            android:layout_width="216dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="164dp"
+            android:background="@drawable/for_input"
+            android:hint="  Password: "
+            android:textColorHint="@color/white"
+            android:textSize="13dp" />
+
+        <Button
+            android:layout_width="172dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="233dp"
+            android:background="@drawable/button_login"
+            android:fontFamily="@font/hind_regular"
+            android:hint="LOGIN"
+            android:textAlignment="center"
+            android:textColorHint="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="283dp"
+            android:text="Still no Account? Sign up"
+            android:textColor="@color/white"/>
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/hind_bold"
+        android:text="THE APP YOU NEED"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

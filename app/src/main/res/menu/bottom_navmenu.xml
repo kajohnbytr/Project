@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Map"
+        android:icon="@drawable/baseline_map_24"/>
+    <item android:title="Parking"
+        android:icon="@drawable/baseline_local_parking_24"/>
+    <item android:title="History"
+        android:icon="@drawable/baseline_history_24"/>
+</menu>
