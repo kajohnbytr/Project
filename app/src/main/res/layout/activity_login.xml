@@ -17,7 +17,7 @@
         android:contentDescription="@string/todo" />
 
     <FrameLayout
-        android:id="@+id/frameLayout"
+        android:id="@+id/frameLayout1"
         android:layout_width="291dp"
         android:layout_height="352dp"
         android:background="@drawable/corner"
@@ -39,6 +39,7 @@
             android:textSize="30dp" />
 
         <EditText
+            android:id="@+id/emailEditText"
             android:layout_width="216dp"
             android:layout_height="48dp"
             android:layout_gravity="center_horizontal"
@@ -46,10 +47,10 @@
             android:background="@drawable/for_input"
             android:hint="  Email: "
             android:textColorHint="@color/white"
-            android:textSize="13dp" />
+            android:textSize="13sp" />
 
         <EditText
-
+            android:id="@+id/passwordEditText"
             android:layout_width="216dp"
             android:layout_height="48dp"
             android:layout_gravity="center_horizontal"
@@ -57,9 +58,10 @@
             android:background="@drawable/for_input"
             android:hint="  Password: "
             android:textColorHint="@color/white"
-            android:textSize="13dp" />
+            android:textSize="13sp" />
 
         <Button
+            android:id="@+id/btn_login"
             android:layout_width="172dp"
             android:layout_height="48dp"
             android:layout_gravity="center_horizontal"
@@ -72,6 +74,7 @@
             android:textSize="15sp" />
 
         <TextView
+            android:id="@+id/bottomText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -80,16 +83,4 @@
             android:textColor="@color/white"/>
     </FrameLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/hind_bold"
-        android:text="THE APP YOU NEED"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
 </androidx.constraintlayout.widget.ConstraintLayout>
